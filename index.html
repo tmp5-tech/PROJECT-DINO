@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Dino Runner Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <div class="title">T-REX RUNNER</div>
+      <div class="score-board">
+        <span class="hi-score" id="hiScoreText">HI 00000</span>
+        <span class="current-score" id="scoreText">00000</span>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="800" height="250"></canvas>
+      
+      <!-- Overlay Screen -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <h2 id="overlayTitle">PRESS SPACE TO PLAY</h2>
+          <p id="overlaySubtitle">Jump over cacti and dodge pterodactyls!</p>
+          <button id="startBtn" class="pixel-btn">START GAME</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-guide">
+      <div class="key-hint"><kbd>Space</kbd> or <kbd>&uarr;</kbd> or <kbd>Tap / Click</kbd> : Jump</div>
+      <div class="key-hint"><kbd>&darr;</kbd> : Duck</div>
+      <div class="sound-toggle">
+        <label>
+          <input type="checkbox" id="soundToggle" checked> Sound Effects
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
